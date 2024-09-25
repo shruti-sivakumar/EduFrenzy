@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login/Sign Up - EduFrenzy</title>
+  <link rel="stylesheet" href="login.css">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- EduFrenzy Logo -->
+  <div class="logo-container">
+    <img src="path-to-logo/edufrenzy-logo.png" alt="EduFrenzy Logo" class="logo">
+  </div>
+
+  <!-- Form Container -->
+  <div class="container">
+    <div class="form-container">
+      <div class="form-header">
+        <h2 id="form-title">Login</h2>
+      </div>
+
+      <!-- Login Form -->
+      <div id="login-form">
+        <form>
+          <label for="username-email">Username or Email</label>
+          <input type="text" id="username-email" required>
+          
+          <label for="password">Password</label>
+          <div class="password-container">
+            <input type="password" id="password" required>
+            <span class="toggle-password" onclick="togglePassword('password')">
+              <i class="fa fa-eye" id="eye-icon"></i>
+            </span>
+          </div>
+
+          <div class="forgot-password">
+            <a href="#">Forgot Password?</a>
+          </div>
+
+          <!-- Social Sign-In -->
+          <div class="social-signin">
+            <p>Or sign in with:</p>
+            <button type="button" class="google-signin">Google</button>
+            <button type="button" class="facebook-signin">Facebook</button>
+          </div>
+
+          <button type="submit">Login</button>
+          <p>New User? <a href="#" id="toggle-signup">Register</a></p>
+        </form>
+      </div>
+
+      <!-- Sign-Up Form -->
+      <div id="signup-form" class="hidden">
+        <form>
+          <label for="username">Username</label>
+          <input type="text" id="username" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+          
+          <label for="password-signup">Password</label>
+          <div class="password-container">
+            <input type="password" id="password-signup" required>
+            <span class="toggle-password" onclick="togglePassword('password-signup')">
+              <i class="fa fa-eye" id="eye-icon"></i>
+            </span>
+          </div>
+
+          <!-- Password Strength Feedback -->
+          <div id="password-strength"></div>
+
+          <label for="confirm-password">Confirm Password</label>
+          <div class="password-container">
+            <input type="password" id="confirm-password" required>
+            <span class="toggle-password" onclick="togglePassword('confirm-password')">
+              <i class="fa fa-eye" id="eye-icon"></i>
+            </span>
+          </div>
+
+          <!-- Password Match Feedback -->
+          <div id="password-match"></div>
+
+          <div class="terms">
+            <input type="checkbox" id="terms-checkbox" required>
+            <label for="terms-checkbox">I agree to the Terms and Conditions</label>
+          </div>
+
+          <button type="submit">Sign Up</button>
+          <p>Already Registered? <a href="#" id="toggle-login">Login</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 EduFrenzy. All Rights Reserved.</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+  </footer>
+
+  <script src="login.js"></script>
+</body>
+</html>

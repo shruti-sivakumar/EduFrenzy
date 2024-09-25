@@ -1,0 +1,178 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ECDFCC; /* Light background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* EduFrenzy Logo Styling */
+.logo-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  max-width: 150px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+/* Form Container Styling */
+.container {
+  background-color: white;
+  width: 400px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: auto; /* Center the card */
+}
+
+.form-container {
+  text-align: center;
+}
+
+.form-header h2 {
+  color: #181C14; /* Darkest color for titles */
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  color: #3C3D37; /* Muted color for labels */
+  margin-bottom: 0.5rem;
+}
+
+/* Password container and toggle button */
+.password-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="password"] {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #697565;
+  border-radius: 5px;
+  font-size: 1rem;
+  flex-grow: 1;
+}
+
+.toggle-password {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* Font Awesome Icon */
+.toggle-password i {
+  font-size: 1.2rem;
+  color: #697565;
+}
+
+/* Social Sign-In Buttons */
+.social-signin p {
+  color: #3C3D37;
+  margin: 1rem 0;
+}
+
+.social-signin button {
+  background-color: #697565;
+  color: white;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  width: 100%;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #181C14; /* Dark color on hover */
+}
+
+/* Validation Feedback */
+#password-strength,
+#password-match {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  color: #181C14;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.forgot-password a {
+  color: #697565; /* Muted link color */
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+.terms {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.terms label {
+  margin-left: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+p a {
+  color: #181C14;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #181C14; /* Dark color footer background */
+  color: white;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #ECDFCC; /* Footer link color */
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
