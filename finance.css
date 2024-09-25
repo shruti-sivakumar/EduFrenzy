@@ -1,0 +1,110 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #181C14;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #ECDFCC;
+    text-decoration: none;
+}
+
+/* Search and Filter */
+.search-filter-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #3C3D37;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-btn {
+    background-color: #697565;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Filters */
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filters select {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Finance Offers Section */
+.finance-offers-section {
+    padding: 20px;
+}
+
+.finance-offers-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+    gap: 20px;
+}
+
+.finance-offer-card {
+    background-color: #ECDFCC;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.apply-btn {
+    background-color: #181C14;
+    color: #ECDFCC;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #3C3D37;
+    color: #ECDFCC;
+}
