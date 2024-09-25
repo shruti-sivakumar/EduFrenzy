@@ -1,0 +1,143 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ECDFCC; /* Light background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #181C14;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    max-width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #ECDFCC;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.profile-icon {
+    font-size: 1.5rem;
+    color: #ECDFCC;
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#categorySearch {
+    padding: 0.8rem;
+    width: 60%;
+    max-width: 600px;
+    border: 1px solid #697565;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Categories Section */
+.categories {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.categories h2 {
+    color: #181C14;
+}
+
+.categories-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 2rem;
+}
+
+.category-card {
+    background-color: #3C3D37;
+    color: #ECDFCC;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px; /* Define card height for consistency */
+}
+
+.category-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.category-card .course-count {
+    background-color: #697565;
+    padding: 0.3rem 0.5rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.view-more {
+    background-color: #181C14;
+    color: #ECDFCC;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: auto; /* Push the button to the bottom */
+}
+
+.view-more:hover {
+    background-color: #697565;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #181C14;
+    color: #ECDFCC;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ECDFCC;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
