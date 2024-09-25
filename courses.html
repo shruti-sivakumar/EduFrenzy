@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Category Courses - EduFrenzy</title>
+  <link rel="stylesheet" href="courses.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-container">
+      <img src="path-to-logo/edufrenzy-logo.png" alt="EduFrenzy Logo" class="logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="finance.html">Finance</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="dashboard.html" class="profile-icon"><i class="fas fa-user"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Introduction Section -->
+  <section class="intro-section">
+    <h1>Category Name: Data Science</h1>
+    <p>Learn how to analyze and interpret complex data using modern tools and techniques. Follow the recommended courses to master the essentials of data science and apply your knowledge in real-world projects.</p>
+    <button class="download-btn">Download Course Plan as PDF</button>
+    <div class="language-select">
+      <label for="languages">Translate:</label>
+      <select id="languages">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="fr">French</option>
+        <option value="hi">Hindi</option>
+        <!-- Add more languages as needed -->
+      </select>
+    </div>
+  </section>
+
+  <!-- Search and Filter Section -->
+  <div class="search-filter-container">
+    <div class="search-container">
+      <input type="text" id="search-bar" placeholder="Search courses...">
+      <button class="search-btn"><i class="fas fa-search"></i></button>
+    </div>
+    <div class="filters">
+      <label for="level">Level:</label>
+      <select id="level">
+        <option value="all">All Levels</option>
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+
+      <label for="duration">Duration:</label>
+      <select id="duration">
+        <option value="all">All Durations</option>
+        <option value="4weeks">4 weeks or less</option>
+        <option value="4-8weeks">4-8 weeks</option>
+        <option value="8-12weeks">8-12 weeks</option>
+        <option value="12+weeks">12+ weeks</option>
+      </select>
+
+      <label for="price">Price:</label>
+      <select id="price">
+        <option value="all">All Prices</option>
+        <option value="free">Free</option>
+        <option value="auditable">Auditable</option>
+        <option value="paid">Paid</option>
+      </select>
+
+      <label for="language">Language:</label>
+      <select id="language">
+        <option value="all">All Languages</option>
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+        <option value="french">French</option>
+        <option value="hindi">Hindi</option>
+        <!-- Add more languages -->
+      </select>
+    </div>
+  </div>
+
+  <!-- Courses Section -->
+  <section class="courses-section">
+    <div class="courses-grid">
+      <div class="course-card">
+        <img src="path-to-image/course1.jpg" alt="Course 1">
+        <h3>Instructor: John Doe</h3>
+        <p>Course Name: Introduction to Data Science</p>
+        <p>Duration: 6 weeks</p>
+        <button class="view-more" onclick="window.open('https://external-link.com', '_blank')">View More</button>
+      </div>
+      <div class="course-card">
+        <img src="path-to-image/course2.jpg" alt="Course 2">
+        <h3>Instructor: Jane Smith</h3>
+        <p>Course Name: Data Analysis with Python</p>
+        <p>Duration: 8 weeks</p>
+        <button class="view-more" onclick="window.open('https://external-link.com', '_blank')">View More</button>
+      </div>
+      <div class="course-card">
+        <img src="path-to-image/course3.jpg" alt="Course 3">
+        <h3>Instructor: Michael Johnson</h3>
+        <p>Course Name: Machine Learning Basics</p>
+        <p>Duration: 10 weeks</p>
+        <button class="view-more" onclick="window.open('https://external-link.com', '_blank')">View More</button>
+      </div>
+      <div class="course-card">
+        <img src="path-to-image/course4.jpg" alt="Course 4">
+        <h3>Instructor: Emily Davis</h3>
+        <p>Course Name: Data Visualization Techniques</p>
+        <p>Duration: 4 weeks</p>
+        <button class="view-more" onclick="window.open('https://external-link.com', '_blank')">View More</button>
+      </div>
+      <div class="course-card">
+        <img src="path-to-image/course5.jpg" alt="Course 5">
+        <h3>Instructor: Sarah Wilson</h3>
+        <p>Course Name: Statistical Analysis</p>
+        <p>Duration: 5 weeks</p>
+        <button class="view-more" onclick="window.open('https://external-link.com', '_blank')">View More</button>
+      </div>
+      <div class="course-card">
+        <img src="path-to-image/course6.jpg" alt="Course 6">
+        <h3>Instructor: David Brown</h3>
+        <p>Course Name: Data Mining Techniques</p>
+        <p>Duration: 7 weeks</p>
+        <button class="view-more" onclick="window.open('https://external-link.com', '_blank')">View More</button>
+      </div>
+      <div class="course-card">
+        <img src="path-to-image/course7.jpg" alt="Course 7">
+        <h3>Instructor: Anna Taylor</h3>
+        <p>Course Name: Advanced Machine Learning</p>
+        <p>Duration: 12 weeks</p>
+        <button class="view-more" onclick="window.open('https://external-link.com', '_blank')">View More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 EduFrenzy. All Rights Reserved.</p>
+    <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+  </footer>
+
+  <script src="courses.js"></script>
+</body>
+</html>
