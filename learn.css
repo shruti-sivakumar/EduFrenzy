@@ -3,88 +3,132 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+   body {
     font-family: Arial, sans-serif;
     background-color: #ECDFCC; /* Light background */
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
+    max-width: 1440px;
+    margin: 0 auto; 
+     padding: 0 2rem;
+  } 
+/* Align the search bar and icon to the right */
+.right-section {
+    display: flex;
+    justify-content: flex-end; /* Pushes the search bar and button to the right */
+    align-items: center;
+    margin-bottom: 1rem; /* Space between the search bar and the categories section */
+  }
+  
+  .search-container input {
+    margin-right: 0.5rem; /* Space between the search input and search icon */
+  }
+  
+  /* Keep the current style of the search bar and button */
+  #search-bar {
+    width: 300px;
+    height: 15px;
+    padding: 0.8rem;
+    border: 2px solid #697565;
+    border-radius: 5px;
+    font-size: 1.1rem;
+  }
+  
+  .search-btn {
+    background-color: #181C14;
+    color: #ECDFCC;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-btn:hover {
+    background-color: #697565;
+  }
+  
+  
 
-/* Header Styling */
-header {
+  /* Header Styling */
+  header {
     background-color: #181C14;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-header .logo {
+  }
+  
+  header .logo {
     max-width: 150px;
     height: auto;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     display: flex;
     list-style: none;
-}
-
-nav ul li {
+    margin-left: auto;
+  }
+  
+  nav ul li {
     margin-left: 2rem;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: #ECDFCC;
     text-decoration: none;
     font-size: 1rem;
-}
-
-nav ul li a.active {
+  }
+  
+  nav ul li a.active {
     font-weight: bold;
-}
-
-.profile-icon {
+  }
+  
+  .profile-icon {
     font-size: 1.5rem;
     color: #ECDFCC;
-}
+  }
+  
+  /* Adjusting header to include search bar on the right */
+  header .right-section {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Ensures everything in the right section is pushed to the right */
+  }
+  
+  /* Search Bar */
 
-/* Search Bar */
-.search-bar {
-    text-align: center;
-    margin: 2rem 0;
-}
+  
 
-#categorySearch {
+  #categorySearch {
+    width: 100%; /* Full width of its container */
     padding: 0.8rem;
-    width: 60%;
-    max-width: 600px;
-    border: 1px solid #697565;
+    border: 2px solid #697565; /* Made border thicker */
     border-radius: 5px;
-    font-size: 1rem;
-}
-
-/* Categories Section */
-.categories {
+    font-size: 1.1rem; /* Slightly larger font */
+  }
+  
+  /* Categories Section */
+  .categories {
     text-align: center;
     margin-top: 1rem;
-}
-
-.categories h2 {
+  }
+  
+  .categories h2 {
     color: #181C14;
-}
-
-.categories-grid {
+  }
+  
+  .categories-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-top: 2rem;
     padding: 0 2rem;
-}
-
-.category-card {
+  }
+  
+  .category-card {
     background-color: #3C3D37;
     color: #ECDFCC;
     padding: 1rem;
@@ -93,51 +137,52 @@ nav ul li a.active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 200px; /* Define card height for consistency */
-}
-
-.category-card h3 {
+    height: 200px;
+  }
+  
+  .category-card h3 {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-}
-
-.category-card .course-count {
+  }
+  
+  .category-card .course-count {
     background-color: #697565;
     padding: 0.3rem 0.5rem;
     border-radius: 50%;
     margin-bottom: 1rem;
     font-size: 1rem;
-}
-
-.view-more {
+  }
+  
+  .view-more {
     background-color: #181C14;
     color: #ECDFCC;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: auto; /* Push the button to the bottom */
-}
-
-.view-more:hover {
+    margin-top: auto;
+  }
+  
+  .view-more:hover {
     background-color: #697565;
-}
-
-/* Footer Styling */
-footer {
+  }
+  
+  /* Footer Styling */
+  footer {
     text-align: center;
     padding: 1rem 0;
     background-color: #181C14;
     color: #ECDFCC;
     font-size: 0.9rem;
     margin-top: auto;
-}
-
-footer a {
+  }
+  
+  footer a {
     color: #ECDFCC;
     text-decoration: none;
     margin: 0 0.5rem;
-}
-
-footer a:hover {
+  }
+  
+  footer a:hover {
     text-decoration: underline;
-}
+  }
+  
