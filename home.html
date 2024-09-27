@@ -92,83 +92,242 @@
   <!-- Featured Courses Slider -->
   <section class="featured-courses">
     <h2>Featured Courses</h2>
-    <div class="courses-carousel">
-      <div class="course-slide">
-        <img src="path-to-image/course1.jpg" alt="Course 1">
-        <div class="course-info">
-          <h3>Course Name 1</h3>
-          <p>By Mentor 1</p>
-          <p>Short description of Course 1.</p>
-          <button>View More</button>
+    <div class="slider-container">
+      <button class="slide-left" onclick="moveSlide('course-slider', -1)">&#10094;</button>
+      <div class="courses-carousel" id="course-slider">
+        <!-- Course slides -->
+        <div class="course-slide">
+          <img src="path-to-image/course1.jpg" alt="Course 1">
+          <div class="course-info">
+            <h3>Course Name 1</h3>
+            <p>By Mentor 1</p>
+            <p>Short description of Course 1.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course2.jpg" alt="Course 2">
+          <div class="course-info">
+            <h3>Course Name 2</h3>
+            <p>By Mentor 2</p>
+            <p>Short description of Course 2.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course1.jpg" alt="Course 1">
+          <div class="course-info">
+            <h3>Course Name 3</h3>
+            <p>By Mentor 3</p>
+            <p>Short description of Course 3.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course2.jpg" alt="Course 2">
+          <div class="course-info">
+            <h3>Course Name 4</h3>
+            <p>By Mentor 4</p>
+            <p>Short description of Course 4.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course1.jpg" alt="Course 1">
+          <div class="course-info">
+            <h3>Course Name 5</h3>
+            <p>By Mentor 5</p>
+            <p>Short description of Course 5.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course2.jpg" alt="Course 2">
+          <div class="course-info">
+            <h3>Course Name 6</h3>
+            <p>By Mentor 6</p>
+            <p>Short description of Course 6.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course1.jpg" alt="Course 1">
+          <div class="course-info">
+            <h3>Course Name 7</h3>
+            <p>By Mentor 7</p>
+            <p>Short description of Course 7.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course2.jpg" alt="Course 2">
+          <div class="course-info">
+            <h3>Course Name 8</h3>
+            <p>By Mentor 8</p>
+            <p>Short description of Course 8.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course2.jpg" alt="Course 2">
+          <div class="course-info">
+            <h3>Course Name 9</h3>
+            <p>By Mentor 9</p>
+            <p>Short description of Course 9.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course1.jpg" alt="Course 1">
+          <div class="course-info">
+            <h3>Course Name 10</h3>
+            <p>By Mentor 10</p>
+            <p>Short description of Course 10.</p>
+            <button>View More</button>
+          </div>
+        </div>
+        <div class="course-slide">
+          <img src="path-to-image/course2.jpg" alt="Course 2">
+          <div class="course-info">
+            <h3>Course Name 11</h3>
+            <p>By Mentor 11</p>
+            <p>Short description of Course 11.</p>
+            <button>View More</button>
+          </div>
         </div>
       </div>
-      <div class="course-slide">
-        <img src="path-to-image/course2.jpg" alt="Course 2">
-        <div class="course-info">
-          <h3>Course Name 2</h3>
-          <p>By Mentor 2</p>
-          <p>Short description of Course 2.</p>
-          <button>View More</button>
-        </div>
-      </div>
-      <div class="course-slide">
-        <img src="path-to-image/course3.jpg" alt="Course 3">
-        <div class="course-info">
-          <h3>Course Name 3</h3>
-          <p>By Mentor 3</p>
-          <p>Short description of Course 3.</p>
-          <button>View More</button>
-        </div>
-      </div>
+      <button class="slide-right" onclick="moveSlide('course-slider', 1)">&#10095;</button>
     </div>
   </section>
 
   <!-- Featured Mentors Section -->
   <section class="featured-mentors">
     <h2>Featured Mentors</h2>
-    <div class="mentors-container">
-      <div class="mentor-card">
-        <img src="path-to-image/mentor1.jpg" alt="Mentor 1">
-        <h3>Mentor Name 1</h3>
-        <p>3 Courses</p>
+    <div class="slider-container">
+      <button class="slide-left" onclick="moveSlide('mentor-slider', -1)">&#10094;</button>
+      <div class="mentors-carousel" id="mentor-slider">
+        <!-- Mentor slides -->
+        <div class="mentor-card">
+          <img src="path-to-image/mentor1.jpg" alt="Mentor 1">
+          <h3>Mentor Name 1</h3>
+          <p>3 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor2.jpg" alt="Mentor 2">
+          <h3>Mentor Name 2</h3>
+          <p>4 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor1.jpg" alt="Mentor 1">
+          <h3>Mentor Name 3</h3>
+          <p>3 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor2.jpg" alt="Mentor 2">
+          <h3>Mentor Name 4</h3>
+          <p>4 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor1.jpg" alt="Mentor 1">
+          <h3>Mentor Name 5</h3>
+          <p>3 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor2.jpg" alt="Mentor 2">
+          <h3>Mentor Name 6</h3>
+          <p>4 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor2.jpg" alt="Mentor 2">
+          <h3>Mentor Name 7</h3>
+          <p>4 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor1.jpg" alt="Mentor 1">
+          <h3>Mentor Name 8</h3>
+          <p>3 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor2.jpg" alt="Mentor 2">
+          <h3>Mentor Name 9</h3>
+          <p>4 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor1.jpg" alt="Mentor 1">
+          <h3>Mentor Name 10</h3>
+          <p>3 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor2.jpg" alt="Mentor 2">
+          <h3>Mentor Name 11</h3>
+          <p>4 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor2.jpg" alt="Mentor 2">
+          <h3>Mentor Name 12</h3>
+          <p>4 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor1.jpg" alt="Mentor 1">
+          <h3>Mentor Name 13</h3>
+          <p>3 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor2.jpg" alt="Mentor 2">
+          <h3>Mentor Name 14</h3>
+          <p>4 Courses</p>
+        </div>
+        <div class="mentor-card">
+          <img src="path-to-image/mentor1.jpg" alt="Mentor 1">
+          <h3>Mentor Name 15</h3>
+          <p>3 Courses</p>
+        </div>
+        <!-- Add 13 more mentor slides here -->
       </div>
-      <div class="mentor-card">
-        <img src="path-to-image/mentor2.jpg" alt="Mentor 2">
-        <h3>Mentor Name 2</h3>
-        <p>4 Courses</p>
-      </div>
-      <div class="mentor-card">
-        <img src="path-to-image/mentor3.jpg" alt="Mentor 3">
-        <h3>Mentor Name 3</h3>
-        <p>5 Courses</p>
-      </div>
-      <div class="mentor-card">
-        <img src="path-to-image/mentor4.jpg" alt="Mentor 4">
-        <h3>Mentor Name 4</h3>
-        <p>2 Courses</p>
-      </div>
+      <button class="slide-right" onclick="moveSlide('mentor-slider', 1)">&#10095;</button>
     </div>
   </section>
 
   <!-- Popular Communities Section -->
   <section class="popular-communities">
     <h2>Popular Communities</h2>
-    <div class="communities-container">
-      <div class="community-card">
-        <h3>Community Name 1</h3>
-        <p>100 Members</p>
-        <p>Created by User 1</p>
+    <div class="slider-container">
+      <button class="slide-left" onclick="moveSlide('community-slider', -1)">&#10094;</button>
+      <div class="communities-carousel" id="community-slider">
+        <!-- Community slides -->
+        <div class="community-card">
+          <h3>Community Name 1</h3>
+          <p>100 Members</p>
+          <p>Created by User 1</p>
+        </div>
+        <div class="community-card">
+          <h3>Community Name 2</h3>
+          <p>80 Members</p>
+          <p>Created by User 2</p>
+        </div>
+        <div class="community-card">
+          <h3>Community Name 3</h3>
+          <p>100 Members</p>
+          <p>Created by User 3</p>
+        </div>
+        <div class="community-card">
+          <h3>Community Name 4</h3>
+          <p>80 Members</p>
+          <p>Created by User 4</p>
+        </div>
+        <div class="community-card">
+          <h3>Community Name 5</h3>
+          <p>100 Members</p>
+          <p>Created by User 5</p>
+        </div>
+        <div class="community-card">
+          <h3>Community Name 6</h3>
+          <p>80 Members</p>
+          <p>Created by User 6</p>
+        </div>
+        <!-- Add 8 more community slides here -->
       </div>
-      <div class="community-card">
-        <h3>Community Name 2</h3>
-        <p>80 Members</p>
-        <p>Created by User 2</p>
-      </div>
-      <div class="community-card">
-        <h3>Community Name 3</h3>
-        <p>50 Members</p>
-        <p>Created by User 3</p>
-      </div>
+      <button class="slide-right" onclick="moveSlide('community-slider', 1)">&#10095;</button>
     </div>
   </section>
 
